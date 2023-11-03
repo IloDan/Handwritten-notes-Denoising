@@ -1,0 +1,2 @@
+- This dataset contains 200 images. 10 Images without grids and for each image without grids the 9 associated images with grids (10 classes)
+- 20 Images per class

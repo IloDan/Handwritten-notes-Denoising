@@ -1,0 +1,2 @@
+- This dataset contains 120 images of notes from 6 different subjects (6 classes)
+- 20 Images per class

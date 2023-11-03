@@ -1,0 +1,2 @@
+- This dataset contains images with and without grids (there may be duplicate images) (2 classes)
+- 60 Images per class
