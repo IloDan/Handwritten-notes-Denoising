@@ -8,7 +8,7 @@
 - calculate us mean and dev. std with the script: **mean_std.py**
     - if this script fails it is because you do not have all the images in **.png** format 
 
-- Il dataset è pronto per essere usato.
+- The dataset is ready to be used.
 
 ## Use on AImageLab Server
 - If working on unimore server:
