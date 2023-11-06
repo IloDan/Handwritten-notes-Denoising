@@ -1,28 +1,27 @@
 # Dataset Generation
+- Random_optimized.py is the data generation script, which randomly overlays 40 of the total grids on the input images and applies spatial and luminance distortion.
 
-- se si lavora su server unimore:
-- Tutti i dati devono essere salvati nella folder /work/cv23_group11/dataset
-(in quel path va vrata la cartella dataset)
-
-- Gli script devono stare in /homes/utenteServer
-
-- creare la cartella **/dataset** in **/work/proprioGruppo**
-
-- creare job per eseguire gli script python con il comando:
-    - **srun -c 12  --mem 10G --time 24:00:00 --partition=students-prod --pty bash**
-    - così si ottiene una partizione slurm e da termminale si possono eseguire gli script come di consueto: **python script.py**
-    
 # Step for dataset generation
-- 
-- runnare lo script **jpgtopng.py** su 'dataset/train_masks' così avremo tutte le immagini in formato **.png** 
-- generare il dataset con lo script in data_generation -> **Random_optimized.py**
+- run the **jpgtopng.py** script on 'dataset/train_masks' so we will have all the images in **.png** format 
+- generate the dataset with the script in data_generation -> **Random_optimized.py**
 
-- calcolarci media e dev. std con lo script: **mean_std.py**
-    - se non va questo script è perhè non si hanno tutte le immagini in formato **.png** 
-   
+- calculate us mean and dev. std with the script: **mean_std.py**
+    - if this script fails it is because you do not have all the images in **.png** format 
 
 - Il dataset è pronto per essere usato.
 
+## Use on AImageLab Server
+- If working on unimore server:
+- All data should be saved in the /work/cv23_group11/dataset folder.
+(the dataset folder should be stored in that path).
+
+- Scripts must be in /homes/userServer
+
+- create the **/dataset** folder in **/work/cv23_group**.
+
+- create jobs to run the python scripts with the command:
+    - **srun -c 12 --mem 10G --time 24:00:00 --partition=students-prod --pty bash**
+    - so you get a slurm partition and from termminal you can run scripts as usual: **python script.py**
 
 
 
