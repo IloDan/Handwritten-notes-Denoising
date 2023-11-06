@@ -1,5 +1,10 @@
 # Dataset Generation
+- the folders with the input images and the grid for the dataset generation are hosted on the AImagelab Server at:
+    - '/work/cvcs_2023_group11/input_folder'
+    - '/work/cvcs_2023_group11/grids/grid_folder'
+      
 - Random_optimized.py is the data generation script, which randomly overlays 40 of the total grids on the input images and applies spatial and luminance distortion.
+  
 
 # Step for dataset generation
 - run the **jpgtopng.py** script on 'dataset/train_masks' so we will have all the images in **.png** format 
