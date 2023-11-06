@@ -7,7 +7,7 @@ from src.config import IN_CHANNELS, OUT_CHANNELS, DEVICE, MEAN, STD
 import matplotlib.pyplot as plt
 
 # Carica il modello dai pesi salvati
-model_name = 'Unet_1024_2epochs_check_1695964609'  # Sostituisci con il nome corretto del modello
+model_name = 'Unet_1024_5epochs'  # Sostituisci con il nome corretto del modello
 model = UNet(IN_CHANNELS, OUT_CHANNELS).to(DEVICE)
 model.load_state_dict(torch.load(f'/work/cvcs_2023_group11/checkpoints/{model_name}.pth'))
 model.eval()
@@ -21,7 +21,7 @@ transform = transforms.Compose([
 ])
 
 # Cartella contenente le immagini di input
-input_folder = 'test_image/'
+input_folder = 'test_image/NoT_infer'
 # Cartella in cui salvare i risultati
 output_folder = 'test_image'
 
